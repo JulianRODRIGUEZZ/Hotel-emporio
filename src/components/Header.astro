@@ -1,0 +1,56 @@
+<header id="header-nav" class="fixed top-0 w-full px-6 py-4 z-50 bg-black">
+  <div class="max-w-7xl mx-auto flex items-center justify-between gap-16">
+    <a href="/" class="relative z-10" aria-label="Hotel Emporio">
+      <img
+        src="../../logo1.png"
+        alt="Hotel Emporio Logo"
+        class="absolute w-10 m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-100"
+      />
+      <img src="../../logo1.png" alt="Hotel Emporio Logo" class="w-10" />
+    </a>
+
+    <nav
+      id="header-menu"
+      class="fixed w-full h-dvh inset-0 bg-[#151a36]/90 flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-auto md:bg-transparent md:flex-row md:translate-y-0"
+    >
+      <a class="text__glowing hover:underline font-semibold uppercase text-white" href="/">
+        Home
+      </a>
+      <a class="text__glowing hover:underline font-semibold uppercase text-white" href="/page">
+        Habitaciones
+      </a>
+      <a class="text__glowing hover:underline font-semibold uppercase text-white" href="/nosotros">
+        Nosotros
+      </a>
+
+      <!-- Botón de Reservar -->
+      <a
+        href="https://wa.me/573112814717"
+        class="font-semibold uppercase text-white bg-blue-800 hover:bg-white hover:text-black border rounded-full border-white px-4 py-2 transition-colors duration-300"
+      >
+        Reservar
+      </a>
+
+      <!-- Cerrar Menú en Móvil -->
+      <a href="#header-nav" class="md:hidden absolute top-6 right-6">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </a>
+    </nav>
+
+    <!-- Icono de menú para móvil -->
+    <a href="#header-menu" class="md:hidden">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </a>
+  </div>
+</header>
+
+  
+  
+      
+  
+  
+

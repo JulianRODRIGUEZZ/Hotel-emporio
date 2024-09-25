@@ -1,0 +1,44 @@
+---
+import "photoswipe/style.css"
+
+---
+<section class="max-w-7xl mx-auto py-72 px-20 ">
+    <h2 class="uppercase text-4xl lg:text-5xl font-tomaso font-semibold text-center text-balance mb-10 lg:mb-20">Nuestras habitaciones</h2>
+    <p class="text-2xl">
+        Contamos con <strong> mas de 30 habitaciones  elegantes y confortables,</strong> nuestro hotel ofrece el refugio perfecto para tus vacaciones o tu dia a dia. Sumérgete en un ambiente veraniego, donde cada detalle está diseñado para tu <strong>máximo confort y relajación.</strong> 
+    </p>
+    <div class="grid grid-cols-3 max-w-6xl gap-4 mx-auto py-20" id="gallery">
+        {
+            Array.from({ length: 9 }).map((_, i) => (
+                <a 
+                class="rounded-xl shadow-xl shadow-blue-400/10 hover:shadow-2xl hover:shadow-sky-300/75  overflow-hidden hover:scale-105 transition-all"
+                href={`/archivo-page/1/gallery/img-${i + 1}.webp`}
+                target="blank"
+                data-pswp-width="1000"
+                data-pswp-height="667"
+                >
+                <img 
+                loading="lazy"
+                src={`/archivo-page/1/gallery/img-${i + 1}.webp`}
+                alt=""
+                />
+                </a>
+            ))
+        }
+    
+    
+      </div>
+</section>
+
+
+  <script >
+    import PhotoSwipeLightbox from "photoswipe/lightbox"
+    
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: "#gallery",
+      children: "a",
+      pswpModule: () => import("photoswipe")
+    });
+    lightbox.init();
+ </script>
+
