@@ -2,11 +2,18 @@
 import "photoswipe/style.css"
 
 ---
-<section class="max-w-7xl mx-auto py-72 px-20 ">
-    <h2 class="uppercase text-4xl lg:text-5xl font-tomaso font-semibold text-center text-balance mb-10 lg:mb-20">Nuestras habitaciones</h2>
+<section class="text-xl text-left px-20 max-w-[105ch] text-pretty mx-auto my-24 ">
+
+  <img class="w-24 mb-10 m-auto" src="./recurso.png" alt="Logo hotel emporio real">
+  
+  <h2 class="text-4xl font-semibold text-center text-wrap mx-auto mb-10 tracking-wide">Nuestras habitaciones</h2>
     <p class="text-2xl">
-        Contamos con <strong> mas de 30 habitaciones  elegantes y confortables,</strong> nuestro hotel ofrece el refugio perfecto para tus vacaciones o tu dia a dia. Sumérgete en un ambiente veraniego, donde cada detalle está diseñado para tu <strong>máximo confort y relajación.</strong> 
+      Contamos con <strong> más de 30 habitaciones </strong> elegantes y confortables, cuidadosamente diseñadas para ofrecerte una experiencia de hospedaje inolvidable. Nuestro hotel se convierte en el refugio perfecto tanto para aquellos que buscan unas <strong> vacaciones relajantes </strong> como para quienes necesitan un espacio cómodo en su día a día. Cada una de nuestras habitaciones está equipada con todas las comodidades modernas para garantizar una estancia placentera.
     </p>
+    
+  <p class="text-2xl">
+    Ya sea que viajes por negocios o placer, aquí encontrarás el equilibrio perfecto entre elegancia, comodidad y una atención personalizada que hará que <strong> te sientas como en casa.</strong> ¡Déjate llevar por la tranquilidad y vive una experiencia única en cada estancia!
+</p>
     <div class="grid grid-cols-3 max-w-6xl gap-4 mx-auto py-20" id="gallery">
         {
             Array.from({ length: 9 }).map((_, i) => (
